@@ -26,6 +26,21 @@ $box-color: #F5F2EE;
 
 
 // 
+.box-color {
+    background-color: $box-color;
+}
+.box-dark {
+    background-color: $dark-color;
+}
+.text-white {
+    color: $white-color;
+}
+.primary {
+    color: $primary-color;
+}
+.primary-bg {
+    background-color: $primary-color;
+}
 .wrapper {
     width: 80%;
     margin: 0 auto;
@@ -186,18 +201,6 @@ nav {
     object-position: 0% 0% 100% 0px;
     height: 631px;
 }
-.box-color {
-    background-color: $box-color;
-}
-.box-dark {
-    background-color: $dark-color;
-}
-.text-white {
-    color: $white-color;
-}
-.primary {
-    color: $primary-color;
-}
 .wwd-content {
     display: flex;
     flex-direction: column;
@@ -237,6 +240,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 34px;
+    padding: 50px 0px 100px 0px;
 }
 
 .medium-title {
@@ -244,7 +248,6 @@ nav {
     letter-spacing: 1.5px;
     @include playfair();
     font-weight: 400;
-    padding-top: 54px;
     padding-bottom: 34px;
     color: $dark-color;
 }
@@ -287,3 +290,59 @@ nav {
 
 
 // Contact 
+.contact {
+    margin-left: 200px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+    position: relative;
+}
+.contact p {
+    font-size: 18px;
+    @include lato();
+    letter-spacing: 0.45px;
+    color: $light-color;
+    margin-bottom: 40px;
+}
+input {
+    width: 100%;
+    padding: 27px 50px; 
+    border: 1px solid $light-color2;
+    border-radius: 1px;
+}
+.columns {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+}
+.btn {
+    letter-spacing: 2.4px;
+    @include playfair();
+    padding: 22px 130px;
+    border: 0;
+    font-size: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.input_element {
+    position: relative;
+    @include lato;
+    display: flex;
+}
+.left_side_contact {
+    display: flex;
+    flex-direction: column;
+    width: 615px;
+    gap: 30px;
+}
+.icon-input {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    transform: translate(5%, 30%);
+}
+.right_side_contact img{
+width: 944px;
+}

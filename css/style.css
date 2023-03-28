@@ -1,5 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+.box-color {
+  background-color: #F5F2EE;
+}
+
+.box-dark {
+  background-color: #444444;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.primary {
+  color: #C98730;
+}
+
+.primary-bg {
+  background-color: #C98730;
+}
+
 .wrapper {
   width: 80%;
   margin: 0 auto;
@@ -183,22 +203,6 @@ nav {
   height: 631px;
 }
 
-.box-color {
-  background-color: #F5F2EE;
-}
-
-.box-dark {
-  background-color: #444444;
-}
-
-.text-white {
-  color: #FFFFFF;
-}
-
-.primary {
-  color: #C98730;
-}
-
 .wwd-content {
   display: flex;
   flex-direction: column;
@@ -239,6 +243,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  padding: 50px 0px 100px 0px;
 }
 
 .medium-title {
@@ -246,7 +251,6 @@ nav {
   letter-spacing: 1.5px;
   font-family: "Playfair Display", sans-serif;
   font-weight: 400;
-  padding-top: 54px;
   padding-bottom: 34px;
   color: #444444;
 }
@@ -290,4 +294,69 @@ nav {
   justify-content: center;
   align-items: center;
   justify-items: center;
+}
+
+.contact {
+  margin-left: 200px;
+  display: flex;
+  flex-direction: row;
+  gap: 160px;
+  position: relative;
+}
+
+.contact p {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.45px;
+  color: #ABABAB;
+  margin-bottom: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 27px 50px;
+  border: 1px solid #707070;
+  border-radius: 1px;
+}
+
+.columns {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  width: 100%;
+}
+
+.btn {
+  letter-spacing: 2.4px;
+  font-family: "Playfair Display", sans-serif;
+  padding: 22px 130px;
+  border: 0;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.input_element {
+  position: relative;
+  font-family: "Lato", sans-serif;
+  display: flex;
+}
+
+.left_side_contact {
+  display: flex;
+  flex-direction: column;
+  width: 615px;
+  gap: 30px;
+}
+
+.icon-input {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  transform: translate(5%, 30%);
+}
+
+.right_side_contact img {
+  width: 944px;
 }/*# sourceMappingURL=style.css.map */
