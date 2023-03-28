@@ -14,6 +14,7 @@ $bg-color: #FFFFFF;
 $border-color: #ABABAB;
 $link-color: #C98730;
 $active-color: #FF4646;
+$box-color: #F5F2EE;
 
 // Precice 
 @mixin lato {
@@ -25,6 +26,10 @@ $active-color: #FF4646;
 
 
 // 
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
 p, h2 {
     margin: 0;
 }
@@ -34,11 +39,18 @@ p, h2 {
 .left {
     text-align: left;
 }
+.center {
+    text-align: center;
+}
 body {
     margin: 0;
     padding: 0;
 }
 // Navigacija i header
+section {
+    margin: 0;
+    padding: 0;
+}
 header {
     width: 100%;
     border-bottom: 1px solid $border-color;
@@ -94,10 +106,8 @@ nav {
 
 // Prva sekcija 
 .who_we_are {
-    width: 80%;
-    margin: 0 auto;
     @include playfair();
-    padding: 80px 0px;
+    padding: 80px 0px 45px 0px;
 }
 .contents {
     display: flex;
@@ -144,7 +154,6 @@ nav {
 }
 .partner-photo {
     width: 615px;
-    height: 495px;
     margin-left: 159px;
     font-size: 21px;
     display: flex;
@@ -154,3 +163,127 @@ nav {
 .partner-photo a {
     color: $link-color;
 }
+
+// section 2
+.what_we_do {
+    display: flex;
+    position: relative;
+    margin: 0;
+}
+.row {
+    flex-direction: row;
+}
+.row_reverse {
+    flex-direction: row-reverse;
+}
+
+.bg-left {
+    width: 50%;
+}
+.fit-pic {
+    width: 100%;
+    object-fit: none;
+    object-position: 0% 0% 100% 0px;
+    height: 631px;
+}
+.box-color {
+    background-color: $box-color;
+}
+.box-dark {
+    background-color: $dark-color;
+}
+.text-white {
+    color: $white-color;
+}
+.primary {
+    color: $primary-color;
+}
+.wwd-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 35%;
+    justify-content: center;
+    position: absolute;
+    padding: 80px 100px;
+}
+.content_right {
+    top: 50%;  
+    right: 20%; 
+    transform: translate(20%, -50%);
+}
+.content_left {
+    top: 50%;  
+    left: 20%; 
+    transform: translate(-20%, -50%);
+}
+.wwd-content h2 {
+    font-size: 50px;
+    font-weight: 400;
+    @include playfair();
+    letter-spacing: 1.25px;
+}
+.wwd-content p {
+    font-size: 18px;
+    @include lato();
+    font-weight: 400;
+    letter-spacing: 0.45px;
+}
+
+// Slider Gallery
+
+.gallery {
+
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.medium-title {
+    font-size: 60px;
+    letter-spacing: 1.5px;
+    @include playfair();
+    font-weight: 400;
+    padding-top: 54px;
+    padding-bottom: 34px;
+    color: $dark-color;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.row a img {
+    height: 364px;
+}
+.row a {
+    max-width: 363px;
+}
+
+.bullets {
+    text-align: center;
+}
+.glide__bullet {
+
+    border: 0;
+    background-color: $dark-color;
+}
+.active {
+    color: $primary-color;
+    background-color: $primary-color;
+    padding: 5px;
+}
+.glide__bullets {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+
+// Contact 
