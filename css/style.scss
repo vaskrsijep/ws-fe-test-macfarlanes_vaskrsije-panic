@@ -1,0 +1,139 @@
+// Font Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+// Font PlayFair
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+// Boje
+$primary-color: #C98730;
+$secondary-color: #FF4646;
+$white-color: #FFFFFF;
+$dark-color: #444444;
+$light-color: #ABABAB;
+$light-color2: #707070;
+$bg-color: #FFFFFF;
+$border-color: #ABABAB;
+$link-color: #C98730;
+$active-color: #FF4646;
+
+// Precice 
+@mixin lato {
+    font-family: 'Lato', sans-serif;
+}
+@mixin playfair {
+    font-family: 'Playfair Display', sans-serif;
+}
+
+
+// 
+
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+// Navigacija i header
+header {
+    width: 100%;
+    border-bottom: 1px solid $border-color;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    
+}
+.search-bar {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    padding: 52px;
+    font-size: 24px;
+    color: $dark-color;
+    border-right: 1px solid $border-color;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+.nav-contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 100px;
+}
+.nav-bar ul li a {
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.27px;
+    text-transform: uppercase;
+    text-decoration: none;
+    @include lato();
+    font-weight: bold;
+}
+.active_link {
+    color: $active-color;
+}
+
+// Prva sekcija 
+.who_we_are {
+    width: 75%;
+    margin: 0 auto;
+    @include playfair();
+    padding: 80px 0px;
+}
+.contents {
+    display: flex;
+    flex-direction: row;
+
+}
+.vertical {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+.contents span:nth-child(1){
+    font-size: 47px;
+    line-height: 0.7;
+}
+.contents span:nth-child(2){
+    font-size: 47px;
+    color: $light-color2;
+    opacity: 30%;
+}
+.content-text {
+    width: 615px;
+    margin-left: 20px;
+}
+.title {
+    margin: 0px 0px 37px 0px;
+    font-size: 34px;
+    color: $dark-color;
+    font-weight: 100;
+}
+
+.partner-photo {
+    width: 615px;
+    height: 495px;
+    margin-left: 159px;
+    font-size: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.partner-photo a {
+    color: $link-color;
+}
+.content-text p {
+    color: $light-color;
+}
