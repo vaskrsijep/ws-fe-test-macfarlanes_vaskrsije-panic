@@ -1,5 +1,5 @@
 // Font Lato
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 // Font PlayFair
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
@@ -25,7 +25,9 @@ $active-color: #FF4646;
 
 
 // 
-
+p, h2 {
+    margin: 0;
+}
 .right {
     text-align: right;
 }
@@ -46,6 +48,9 @@ nav {
     flex-direction: row;
     
 }
+.nav-bar {
+    padding: 10px 0px;
+}
 .search-bar {
     display: flex;
     justify-content: center;
@@ -58,6 +63,7 @@ nav {
     margin: 0;
     width: 20px;
     height: 20px;
+    position: absolute;
 }
 .nav-contents {
     width: 100%;
@@ -88,7 +94,7 @@ nav {
 
 // Prva sekcija 
 .who_we_are {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     @include playfair();
     padding: 80px 0px;
@@ -105,23 +111,37 @@ nav {
 .contents span:nth-child(1){
     font-size: 47px;
     line-height: 0.7;
+    margin-top: 10px;
 }
 .contents span:nth-child(2){
     font-size: 47px;
     color: $light-color2;
     opacity: 30%;
+    margin-top: 10px;
 }
 .content-text {
     width: 615px;
     margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 .title {
-    margin: 0px 0px 37px 0px;
     font-size: 34px;
     color: $dark-color;
     font-weight: 100;
+    margin-bottom: 13px;
 }
 
+.content-text p {
+    color: $light-color;
+    font-size: 18px;
+    @include lato();
+    letter-spacing: 0.45px;
+    font-weight: 400;
+    color: $light-color;
+}
 .partner-photo {
     width: 615px;
     height: 495px;
@@ -133,7 +153,4 @@ nav {
 }
 .partner-photo a {
     color: $link-color;
-}
-.content-text p {
-    color: $light-color;
 }
