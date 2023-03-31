@@ -14,13 +14,14 @@
     <header>
         <nav>
             <div class="search-bar">
-                <i class="fa-thin fa-magnifying-glass"></i>
+                <i class="fas fa-search" onclick="search()"></i>
             </div>
+            <div class="menu_pos"><a href="#menu" class="hamburger_menu" id="toggle_menu"><span></span></a></div>
             <div class="nav-contents">
                 <div class="logo">
                     <img src="assets/Layer 2.png" alt="">
                 </div>
-                <div class="nav-bar">
+                <div class="nav-bar" id="menu">
                     <ul>
                         <li><a href="#who_we_are" class="active_link">WHO WE ARE</a></li>
                         <li><a href="">WHAT WE DO</a></li>
@@ -31,7 +32,9 @@
             </div>
         </nav>
       </header>
-
+      <div id="search_content">
+        <div class="input_element_search"><span class="icon-input"><i class="fas fa-search"></i></span><input type="text" placeholder="Search"></div>
+      </div>
       <section id="who_we_are" class="who_we_are wrapper">
         <div class="contents">
             <span class="vertical right">Christopher Acton</span>
@@ -97,6 +100,9 @@
             <a href="assets/Clip-2.png" data-fancybox="gallery" data-caption="Caption #2">
                 <img src="assets/Clip-2.png" />
             </a>
+            <a href="assets/Clip-2.png" data-fancybox="gallery" data-caption="Caption #2">
+                <img src="assets/Clip-2.png" />
+            </a>
         </div>
         <div class="row">
             <a href="assets/Clip-2.png" data-fancybox="gallery" data-caption="Caption #1">
@@ -110,6 +116,9 @@
                 <img src="assets/Clip-2.png" />
             </a>
               
+            <a href="assets/Clip-2.png" data-fancybox="gallery" data-caption="Caption #2">
+                <img src="assets/Clip-2.png" />
+            </a>
             <a href="assets/Clip-2.png" data-fancybox="gallery" data-caption="Caption #2">
                 <img src="assets/Clip-2.png" />
             </a>
